@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_cli_registro_paciente,cli.registro_paciente,model_cli_registro_paciente,base.group_system,1,1,1,1

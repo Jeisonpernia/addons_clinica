@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="view_cli_procedencia_paciente_form">
+        <field name="name">cli.procedencia_paciente.form</field>
+        <field name="model">cli.procedencia_paciente</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Procedencia de Pacientes" >
+                <sheet>
+                    <group colspan="4" col="4">
+                        <field  name="name" />
+                        <field  name="partner_id" />
+                        <field  name="active" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record model="ir.ui.view" id="view_cli_procedencia_paciente_tree">
+        <field name="name">cli.procedencia_paciente.tree</field>
+        <field name="model">cli.procedencia_paciente</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Procedencia de Pacientes">
+                <field name="name"/>
+                <field name="partner_id"/>
+            </tree>
+        </field>
+    </record>
+    
+    <record model="ir.actions.act_window" id="action_cli_procedencia_paciente">
+        <field name="name">Procedencia de Pacientes</field>
+        <field name="res_model">cli.procedencia_paciente</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form,tree</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Aquí se registran la procedencia de los Pacientes.
+            </p>
+        </field>
+    </record>
+            
+    
+    
+    <menuitem   name="Procedencia de Pacientes" 
+                id="procedencia_pacientes_id" 
+                parent="menu_principal_clinica"
+                sequence="15" 
+                />
+    <menuitem   name="Procedencia" 
+                action="action_cli_procedencia_paciente" 
+                id="menu_action_procedencia_form_id" 
+                parent="procedencia_pacientes_id"
+                sequence="5" 
+                />
+    </data>
+</openerp>
