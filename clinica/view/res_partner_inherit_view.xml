@@ -45,10 +45,6 @@
     </record>
             
     
-    <menuitem   name="Clínica" 
-                id="menu_principal_clinica" 
-                sequence="10" 
-                />
     <menuitem   name="Registro de Pacientes" 
                 id="registro_pacientes_id" 
                 parent="menu_principal_clinica"
