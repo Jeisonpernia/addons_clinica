@@ -44,6 +44,10 @@
         </field>
     </record>
             
+    <menuitem   name="Clínica" 
+                id="menu_principal_clinica" 
+                sequence="10" 
+                />
     
     
     <menuitem   name="Procedencia de Pacientes" 

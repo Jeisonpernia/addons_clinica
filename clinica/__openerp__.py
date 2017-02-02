@@ -34,9 +34,8 @@
     """,
     'update_xml': [],
     "data" : [
-        
-        'view/res_partner_inherit_view.xml',
         'view/cli_procedencia_paciente_view.xml',
+        'view/res_partner_inherit_view.xml',
         
         ],
     'installable': True,
